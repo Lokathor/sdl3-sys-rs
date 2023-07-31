@@ -233,7 +233,6 @@ fn link_sdl3(target_os: &str) {
         if cfg!(feature = "bundled")
             || (cfg!(feature = "use-pkgconfig") == false && cfg!(feature = "use-vcpkg") == false)
         {
-            println!("cargo:rustc-link-lib=static=SDL3main");
             if target_os.contains("windows") {
                 println!("cargo:rustc-link-lib=static=SDL3-static");
             } else {
