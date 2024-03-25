@@ -1,0 +1,8 @@
+[package]
+name = "sdl3-sys-rs"
+version = "0.0.8+sdl3-prerelease-3.1.0"
+edition = "2021"
+license = "Zlib OR MIT OR Apache-2.0"
+
+[dependencies]
+bool32 = "1"
