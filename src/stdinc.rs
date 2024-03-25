@@ -1,5 +1,7 @@
 #![allow(non_camel_case_types)]
 
+pub use core::ffi::*;
+
 #[inline]
 pub const fn SDL_arraysize<T, const N: usize>(_arr: &[T; N]) -> usize {
   N
